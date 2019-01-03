@@ -5,4 +5,8 @@ package com.joy.demo.exoplayersample.playback;
  */
 
 public interface Playback {
+    /**
+     * 释放播放器资源
+     * */
+    void release();
 }
