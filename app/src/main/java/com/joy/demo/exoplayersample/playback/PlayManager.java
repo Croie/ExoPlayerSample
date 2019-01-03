@@ -87,7 +87,6 @@ public class PlayManager implements Playback{
             if (exoPlayer != null) {
                 exoPlayer.setPlayWhenReady(false);
             }
-//            releasePlayer();
         }
 
         @Override
