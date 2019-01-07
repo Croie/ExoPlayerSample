@@ -63,7 +63,6 @@ public class PlayerFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-//        playManager.release();
     }
 
     @Override
