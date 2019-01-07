@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         MediaControllerCompat.setMediaController(this, mediaController);
     }
 
+    /**
+     * the first coming {@link onCreate()} invoke the method
+     *
+     * */
     private void navigateToFragment(){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
