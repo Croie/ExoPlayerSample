@@ -50,7 +50,6 @@ public class PlayerFragment extends Fragment {
         playerView = view.findViewById(R.id.player_view);
         playManager = ((MainActivity)getActivity()).getPlayManager();
         playManager.setPlayerView(playerView);
-//        playManager = new PlayManager(getActivity(), playerView);
         MediaControllerCompat.getMediaController(getActivity()).getTransportControls().play();
         return view;
     }
