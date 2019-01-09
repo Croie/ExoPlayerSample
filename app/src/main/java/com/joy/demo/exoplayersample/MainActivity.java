@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         builder = new PlaybackStateCompat.Builder()
                         .setActions(PlaybackStateCompat.ACTION_PLAY |
                                     PlaybackStateCompat.ACTION_PLAY_PAUSE);
-        //
+        // 1.set up playback state
         mMediaSession.setPlaybackState(builder.build());
         mMediaSession.setCallback(playManager.getMediaSessionCallback());
 
