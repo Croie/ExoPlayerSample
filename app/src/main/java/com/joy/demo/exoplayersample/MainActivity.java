@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // 2.set up Callback receive mediaController operation
         mMediaSession.setCallback(playManager.getMediaSessionCallback());
 
+        // 3. create MediaControllerCompat object
         MediaControllerCompat mediaController = new MediaControllerCompat(this, mMediaSession);
         MediaControllerCompat.setMediaController(this, mediaController);
     }
