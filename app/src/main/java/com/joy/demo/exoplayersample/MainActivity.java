@@ -41,16 +41,20 @@ public class MainActivity extends AppCompatActivity {
         builder = new PlaybackStateCompat.Builder()
                         .setActions(PlaybackStateCompat.ACTION_PLAY |
                                     PlaybackStateCompat.ACTION_PLAY_PAUSE);
-        //
+        // 1.set up playback state
         mMediaSession.setPlaybackState(builder.build());
+
+        // 2.set up Callback receive mediaController operation
         mMediaSession.setCallback(playManager.getMediaSessionCallback());
 
+        // 3. create MediaControllerCompat object
         MediaControllerCompat mediaController = new MediaControllerCompat(this, mMediaSession);
         MediaControllerCompat.setMediaController(this, mediaController);
     }
 
     /**
      * the first coming {@link onCreate()} invoke the method
+     * invoke the method, when user coming the interface
      *
      * */
     private void navigateToFragment(){

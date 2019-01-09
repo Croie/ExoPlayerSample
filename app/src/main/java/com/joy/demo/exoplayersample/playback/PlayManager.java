@@ -27,13 +27,6 @@ public class PlayManager implements Playback{
     private PlayerView playerView;
     private Context context;
 
-    public PlayManager(Context context, PlayerView playView){
-        mCallback = new MediaSessionCallback();
-        playerView = playView;
-        this.context = context;
-
-    }
-
     public PlayManager(Context context){
         mCallback = new MediaSessionCallback();
         this.context = context;
