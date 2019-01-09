@@ -43,12 +43,18 @@ public class MainActivity extends AppCompatActivity {
                                     PlaybackStateCompat.ACTION_PLAY_PAUSE);
         // 1.set up playback state
         mMediaSession.setPlaybackState(builder.build());
+
+        // 2.set up Callback receive mediaController operation
         mMediaSession.setCallback(playManager.getMediaSessionCallback());
 
         MediaControllerCompat mediaController = new MediaControllerCompat(this, mMediaSession);
         MediaControllerCompat.setMediaController(this, mediaController);
     }
 
+    /**
+     * invoke the method, when user coming the interface
+     *
+     * */
     private void navigateToFragment(){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
